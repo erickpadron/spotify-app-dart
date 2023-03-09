@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:spotify_app_dart/widgets/recentButton.dart';
 
 void main() {
   runApp(const MyApp());
@@ -103,41 +104,10 @@ class _MyHomePageState extends State<MyHomePage> {
             children: [
               Row(
                 children: [
-                  Container(
-                    margin: const EdgeInsets.only(left: 10.0, top: 10.0),
-                    width: MediaQuery.of(context).size.width/2-20,
-                    height: 65.0,
-                    decoration: BoxDecoration(
-                      color: const Color.fromRGBO(42, 42, 42, 1),
-                      borderRadius: BorderRadius.circular(radiusRecent),
-                    ),
-                    child: Center(
-                        child: Row(
-                          children: [
-                            Container(
-                              margin: const EdgeInsets.only(right: 10.0),
-                              width: 65.0,
-                              height: 65.0,
-                              decoration: BoxDecoration(
-                                color: Colors.blue,
-                                borderRadius: BorderRadius.only(
-                                  topLeft: Radius.circular(radiusRecent),
-                                  bottomLeft: Radius.circular(radiusRecent),
-                                ),
-                              ),
-                            ),
-                            const Expanded(
-                              child: Text(
-                                'Liked Songs',
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                            )
-                          ],
-                        )
-                    ),
+                  RecentButton(
+                    key: UniqueKey(),
+                    title: 'Loke',
+                    c: Colors.red,
                   ),
                   Container(
                     margin: const EdgeInsets.only(left: 10.0, top: 10.0),
