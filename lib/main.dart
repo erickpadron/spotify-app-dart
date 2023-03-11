@@ -106,206 +106,90 @@ class _MyHomePageState extends State<MyHomePage> {
                 children: [
                   RecentButton(
                     key: UniqueKey(),
-                    title: 'Loke',
-                    c: Colors.red,
+                    title: 'Liked Songs',
+                    c: Colors.blue,
                   ),
-                  Container(
-                    margin: const EdgeInsets.only(left: 10.0, top: 10.0),
-                    width: MediaQuery.of(context).size.width/2-20,
-                    height: 65.0,
-                    decoration: BoxDecoration(
-                      color: const Color.fromRGBO(42, 42, 42, 1),
-                      borderRadius: BorderRadius.circular(radiusRecent),
-                    ),
-                    child: Center(
-                        child: Row(
-                          children: [
-                            Container(
-                              margin: const EdgeInsets.only(right: 10.0),
-                              width: 65.0,
-                              height: 65.0,
-                              decoration: BoxDecoration(
-                                color: Colors.pink,
-                                borderRadius: BorderRadius.only(
-                                  topLeft: Radius.circular(radiusRecent),
-                                  bottomLeft: Radius.circular(radiusRecent),
-                                ),
-                              ),
-                            ),
-                            const Expanded(
-                              child: Text(
-                                'Musculok 2',
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                            )
-                          ],
-                        )
-                    ),
+                  RecentButton(
+                    key: UniqueKey(),
+                    title: 'Musculok 2',
+                    c: Colors.pink,
                   ),
                 ],
               ),
               Row(
                 children: [
-                  Container(
-                    margin: const EdgeInsets.only(left: 10.0, top: 7.0),                    width: MediaQuery.of(context).size.width/2-20,
-                    height: 65.0,
-                    decoration: BoxDecoration(
-                      color: const Color.fromRGBO(42, 42, 42, 1),
-                      borderRadius: BorderRadius.circular(radiusRecent),
-                    ),
-                    child: Center(
-                        child: Row(
-                          children: [
-                            Container(
-                              margin: const EdgeInsets.only(right: 10.0),
-                              width: 65.0,
-                              height: 65.0,
-                              decoration: BoxDecoration(
-                                color: Colors.brown,
-                                borderRadius: BorderRadius.only(
-                                  topLeft: Radius.circular(radiusRecent),
-                                  bottomLeft: Radius.circular(radiusRecent),
-                                ),
-                              ),
-                            ),
-                            const Expanded(
-                              child: Text(
-                                'This is Kim Petras',
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 12.0,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                            )
-                          ],
-                        )
-                    ),
+                  RecentButton(
+                    key: UniqueKey(),
+                    title: 'This is Kim Petras',
+                    c: Colors.orange,
                   ),
-                  Container(
-                    margin: const EdgeInsets.only(left: 10.0, top: 7.0),
-                    width: MediaQuery.of(context).size.width/2-20,
-                    height: 65.0,
-                    decoration: BoxDecoration(
-                      color: const Color.fromRGBO(42, 42, 42, 1),
-                      borderRadius: BorderRadius.circular(radiusRecent),
-                    ),
-                    child: Center(
-                        child: Row(
-                          children: [
-                            Container(
-                              margin: const EdgeInsets.only(right: 10.0),
-                              width: 65.0,
-                              height: 65.0,
-                              decoration: BoxDecoration(
-                                color: Colors.green,
-                                borderRadius: BorderRadius.only(
-                                  topLeft: Radius.circular(radiusRecent),
-                                  bottomLeft: Radius.circular(radiusRecent),
-                                ),
-                              ),
-                            ),
-                            const Expanded(
-                              child: Text(
-                                '2010s Mix',
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                            )
-                          ],
-                        )
-                    ),
+                  RecentButton(
+                    key: UniqueKey(),
+                    title: '2010s Mix',
+                    c: Colors.green,
                   ),
                 ],
               ),
               Row(
                 children: [
-                  Container(
-                    margin: const EdgeInsets.only(left: 10.0, top: 7.0),
-                    width: MediaQuery.of(context).size.width/2-20,
-                    height: 65.0,
-                    decoration: BoxDecoration(
-                      color: const Color.fromRGBO(42, 42, 42, 1),
-                      borderRadius: BorderRadius.circular(radiusRecent),
-                    ),
-                    child: Center(
-                        child: Row(
-                          children: [
-                            Container(
-                              margin: const EdgeInsets.only(right: 10.0),
-                              width: 65.0,
-                              height: 65.0,
-                              decoration: BoxDecoration(
-                                color: Colors.purple,
-                                borderRadius: BorderRadius.only(
-                                  topLeft: Radius.circular(radiusRecent),
-                                  bottomLeft: Radius.circular(radiusRecent),
-                                ),
-                              ),
-                            ),
-                            const Expanded(
-                              child: Text(
-                                'On Repeat',
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                            )
-                          ],
-                        )
-                    ),
+                  RecentButton(
+                    key: UniqueKey(),
+                    title: 'On Repeat',
+                    c: Colors.purple,
                   ),
-                  Container(
-                    margin: const EdgeInsets.only(left: 10.0, top: 7.0),
-                    width: MediaQuery.of(context).size.width/2-20,
-                    height: 65.0,
-                    decoration: BoxDecoration(
-                      color: const Color.fromRGBO(42, 42, 42, 1),
-                      borderRadius: BorderRadius.circular(radiusRecent),
-                    ),
-                    child: Center(
-                        child: Row(
-                          children: [
-                            Container(
-                              margin: const EdgeInsets.only(right: 10.0),
-                              width: 65.0,
-                              height: 65.0,
-                              decoration: BoxDecoration(
-                                color: Colors.yellow,
-                                borderRadius: BorderRadius.only(
-                                  topLeft: Radius.circular(radiusRecent),
-                                  bottomLeft: Radius.circular(radiusRecent),
-                                ),
-                              ),
-                            ),
-                            const Expanded(
-                              child: Text(
-                                'Mr. Morale & The Big Steppers',
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                            )
-                          ],
-                        )
-                    ),
+                  RecentButton(
+                    key: UniqueKey(),
+                    title: 'Mr. Morale & The Big Steppers',
+                    c: Colors.yellow,
                   ),
                 ],
               ),
             ],
           ),
           Container(
-            margin: const EdgeInsets.all(10.0),
-            color: Colors.red[600],
+            margin: const EdgeInsets.only(top: 30.0, bottom: 10.0, left: 10.0, right: 10.0),
+            color: Colors.red,
             width: MediaQuery.of(context).size.width,
             height: 250.0,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Container(
+                  margin: const EdgeInsets.all(10.0),
+                  width: 60.0,
+                  height: 60.0,
+                  decoration: BoxDecoration(
+                    color: Colors.purple,
+                    borderRadius: BorderRadius.circular(30),
+                  ),
+                ),
+                Container(
+                  margin: const EdgeInsets.only(left: 10.0, right: 10.0, bottom: 10.0),
+                  width: 400.0,
+                  height: 160,
+                  decoration: BoxDecoration(
+                    color: const Color.fromRGBO(42, 42, 42, 1),
+                    borderRadius: BorderRadius.circular(10.0),
+                  ),
+                  child: Row(
+                    children: [
+                      Container(
+                        width: 160,
+                        height: 160,
+                        decoration: const BoxDecoration(
+                          color: Color.fromRGBO(106, 119, 137, 1),
+                          borderRadius: BorderRadius.only(
+                            topLeft: Radius.circular(10.0),
+                            bottomLeft: Radius.circular(10.0),
+                          )
+                        ),
+                      ),
+                      
+                    ],
+                  ),
+                ),
+              ],
+            ),
           ),
           Container(
             margin: const EdgeInsets.all(10.0),
