@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class AlbumImage extends StatelessWidget {
-  const AlbumImage({super.key});
+  final AssetImage albumCover;
+  const AlbumImage({Key ? key, required this.albumCover}) : super (key : key);
 
   @override
   Widget build(BuildContext context) {
@@ -10,7 +11,10 @@ class AlbumImage extends StatelessWidget {
       width: 150.0,
       height: 150.0,
       decoration: BoxDecoration(
-        color: Colors.pink,
+        image: DecorationImage(
+          image: albumCover,
+          fit: BoxFit.cover,
+        ),
         borderRadius: BorderRadius.circular(5.0),
       ),
 

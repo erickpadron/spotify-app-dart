@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 
 class NewRelease extends StatelessWidget {
   final String artist;
-  const NewRelease({Key? key, required this.artist}): super(key: key);
+  final AssetImage artistImage;
+  final AssetImage albumCover;
+  const NewRelease({Key? key, required this.artist, required this.artistImage, required this.albumCover}): super(key: key);
   @override
   Widget build(BuildContext context){
     return Container(
@@ -19,7 +21,10 @@ class NewRelease extends StatelessWidget {
                 width: 60.0,
                 height: 60.0,
                 decoration: BoxDecoration(
-                  color: Colors.indigo,
+                  image: DecorationImage(
+                    image: artistImage,
+                    fit: BoxFit.cover,
+                  ),
                   borderRadius: BorderRadius.circular(30),
                 ),
               ),
@@ -58,12 +63,15 @@ class NewRelease extends StatelessWidget {
                 Container(
                   width: 160,
                   height: 160,
-                  decoration: const BoxDecoration(
-                      color: Color.fromRGBO(106, 119, 137, 1),
-                      borderRadius: BorderRadius.only(
-                        topLeft: Radius.circular(10.0),
-                        bottomLeft: Radius.circular(10.0),
-                      )
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      image: albumCover,
+                      fit: BoxFit.cover,
+                    ),
+                    borderRadius: const BorderRadius.only(
+                      topLeft: Radius.circular(10.0),
+                      bottomLeft: Radius.circular(10.0),
+                    ),
                   ),
                 ),
                 Column(

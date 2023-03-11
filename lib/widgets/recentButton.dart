@@ -2,9 +2,8 @@ import 'package:flutter/material.dart';
 
 class RecentButton extends StatelessWidget{
   final String title;
-  final Color c;
   final AssetImage background;
-  const RecentButton({Key? key, required this.title, required this.c, required this.background}) : super(key: key);
+  const RecentButton({Key? key, required this.title, required this.background}) : super(key: key);
 
   @override
   Widget build(BuildContext context){
@@ -24,7 +23,6 @@ class RecentButton extends StatelessWidget{
                 width: 65.0,
                 height: 65.0,
                 decoration: BoxDecoration(
-
                   image: DecorationImage(
                     image: background,
                     fit: BoxFit.cover,

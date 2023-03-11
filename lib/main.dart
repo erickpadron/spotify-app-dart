@@ -111,13 +111,11 @@ class _MyHomePageState extends State<MyHomePage> {
                     RecentButton(
                       key: UniqueKey(),
                       title: 'Liked Songs',
-                      c: Colors.blue,
                       background: const AssetImage('images/likedSongs.png'),
                     ),
                     RecentButton(
                       key: UniqueKey(),
                       title: 'Musculok 2',
-                      c: Colors.pink,
                       background: const AssetImage('images/musculok.jpg'),
                     ),
                   ],
@@ -127,13 +125,11 @@ class _MyHomePageState extends State<MyHomePage> {
                     RecentButton(
                       key: UniqueKey(),
                       title: 'This is Kim Petras',
-                      c: Colors.orange,
                       background: const AssetImage('images/thisIsKimPetras.jpg'),
                     ),
                     RecentButton(
                       key: UniqueKey(),
                       title: '2010s Mix',
-                      c: Colors.green,
                       background: const AssetImage('images/2010sMix.jpg'),
                     ),
                   ],
@@ -143,13 +139,11 @@ class _MyHomePageState extends State<MyHomePage> {
                     RecentButton(
                       key: UniqueKey(),
                       title: 'On Repeat',
-                      c: Colors.purple,
                       background: const AssetImage('images/onRepeat.jpg'),
                     ),
                     RecentButton(
                       key: UniqueKey(),
                       title: 'Mr. Morale & The Big Steppers',
-                      c: Colors.yellow,
                       background: const AssetImage('images/mrMorale.jpg'),
                     ),
                   ],
@@ -158,12 +152,12 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             const NewRelease(
               artist: 'Ashnikko',
+              artistImage: AssetImage('images/ashnikko.jpg'),
+              albumCover: AssetImage('images/worms.jpg'),
             ),
             Container(
               margin: const EdgeInsets.all(10.0),
-              color: Colors.amber[600],
               width: MediaQuery.of(context).size.width,
-
               child: const Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -181,10 +175,15 @@ class _MyHomePageState extends State<MyHomePage> {
                     scrollDirection: Axis.horizontal,
                     child: Row(
                       children: [
-                        AlbumImage(),
-                        AlbumImage(),
-                        AlbumImage(),
-                        AlbumImage(),
+                        AlbumImage(
+                          albumCover: AssetImage('images/enchiladex.jpg'),
+                        ),
+                        AlbumImage(
+                          albumCover: AssetImage('images/theLastOfUs.jpg'),
+                        ),
+                        AlbumImage(
+                          albumCover: AssetImage('images/podlogical.jpg'),
+                        ),
                         SizedBox(
                           width: 10.0,
                         ),
