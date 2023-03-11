@@ -7,7 +7,6 @@ class NewRelease extends StatelessWidget {
   Widget build(BuildContext context){
     return Container(
       margin: const EdgeInsets.only(top: 30.0, bottom: 10.0, left: 10.0, right: 10.0),
-      color: Colors.black87,
       width: MediaQuery.of(context).size.width,
       height: 250.0,
       child: Column(
@@ -20,7 +19,7 @@ class NewRelease extends StatelessWidget {
                 width: 60.0,
                 height: 60.0,
                 decoration: BoxDecoration(
-                  color: Colors.purple,
+                  color: Colors.indigo,
                   borderRadius: BorderRadius.circular(30),
                 ),
               ),
@@ -122,7 +121,7 @@ class NewRelease extends StatelessWidget {
                           ),
                         ],
                       ),
-                    )
+                    ),
                   ],
                 ),
               ],
