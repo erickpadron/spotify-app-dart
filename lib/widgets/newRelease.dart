@@ -116,7 +116,7 @@ class NewRelease extends StatelessWidget {
                         children: [
                           Icon(
                             Icons.favorite_border,
-                            color: Colors.white,
+                            color: Color.fromRGBO(179, 179, 179, 1),
                             size: 25.0,
                           ),
                           SizedBox(
