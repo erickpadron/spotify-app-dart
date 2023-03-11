@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:spotify_app_dart/widgets/recentButton.dart';
+import 'package:spotify_app_dart/widgets/newRelease.dart';
 
 void main() {
   runApp(const MyApp());
@@ -146,50 +147,8 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ],
           ),
-          Container(
-            margin: const EdgeInsets.only(top: 30.0, bottom: 10.0, left: 10.0, right: 10.0),
-            color: Colors.red,
-            width: MediaQuery.of(context).size.width,
-            height: 250.0,
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Container(
-                  margin: const EdgeInsets.all(10.0),
-                  width: 60.0,
-                  height: 60.0,
-                  decoration: BoxDecoration(
-                    color: Colors.purple,
-                    borderRadius: BorderRadius.circular(30),
-                  ),
-                ),
-                Container(
-                  margin: const EdgeInsets.only(left: 10.0, right: 10.0, bottom: 10.0),
-                  width: 400.0,
-                  height: 160,
-                  decoration: BoxDecoration(
-                    color: const Color.fromRGBO(42, 42, 42, 1),
-                    borderRadius: BorderRadius.circular(10.0),
-                  ),
-                  child: Row(
-                    children: [
-                      Container(
-                        width: 160,
-                        height: 160,
-                        decoration: const BoxDecoration(
-                          color: Color.fromRGBO(106, 119, 137, 1),
-                          borderRadius: BorderRadius.only(
-                            topLeft: Radius.circular(10.0),
-                            bottomLeft: Radius.circular(10.0),
-                          )
-                        ),
-                      ),
-                      
-                    ],
-                  ),
-                ),
-              ],
-            ),
+          const NewRelease(
+            artist: 'Ashnikko',
           ),
           Container(
             margin: const EdgeInsets.all(10.0),
