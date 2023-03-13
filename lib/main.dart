@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:spotify_app_dart/widgets/recentButton.dart';
 import 'package:spotify_app_dart/widgets/newRelease.dart';
-import 'package:spotify_app_dart/widgets/albumImage.dart';
 import 'package:spotify_app_dart/widgets/menuBar2.dart';
 import 'package:spotify_app_dart/widgets/currentPlaying.dart';
+import 'package:spotify_app_dart/widgets/contentCarrousel.dart';
+import 'package:spotify_app_dart/widgets/albumImage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -160,41 +161,77 @@ class _MyHomePageState extends State<MyHomePage> {
                   artistImage: AssetImage('images/ashnikko.jpg'),
                   albumCover: AssetImage('images/worms.jpg'),
                 ),
-                Container(
-                  margin: const EdgeInsets.only(top: 0.0, bottom: 10.0, left: 10.0, right: 10.0),
-                  width: MediaQuery.of(context).size.width,
-                  child: const Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Padding(
-                          padding: EdgeInsets.only(
-                              left: 10.0, top: 5.0, bottom: 10.0),
-                          child: Text('Episodes for you',
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 22.0,
-                              ))),
-                      SingleChildScrollView(
-                        scrollDirection: Axis.horizontal,
-                        child: Row(
-                          children: [
-                            AlbumImage(
-                              albumCover: AssetImage('images/enchiladex.jpg'),
-                            ),
-                            AlbumImage(
-                              albumCover: AssetImage('images/theLastOfUs.jpg'),
-                            ),
-                            AlbumImage(
-                              albumCover: AssetImage('images/podlogical.jpg'),
-                            ),
-                            SizedBox(
-                              width: 10.0,
-                            ),
-                          ],
-                        ),
-                      )
-                    ],
+
+                const ContentCarrousel(
+                  title: 'Episodes for you',
+                  albumCover1: AlbumImage(
+                    title: 'Enchiladex',
+                    albumCover: AssetImage('images/enchiladex.jpg'),
+                    description: 'Show - LaH. Plataforma',
+                  ),
+                  albumCover2: AlbumImage(
+                    title: 'The Last Of Us',
+                    albumCover: AssetImage('images/theLastOfUs.jpg'),
+                    description: 'Show - Ray Contreras',
+                  ),
+                  albumCover3: AlbumImage(
+                    title: 'Podlogical',
+                    albumCover: AssetImage('images/podlogical.jpg'),
+                    description: 'Show - equis',
+                  ),
+                ),
+               const ContentCarrousel(
+                  title: 'Your top mixes',
+                  albumCover1: AlbumImage(
+                    title: '',
+                    albumCover: AssetImage('images/mixpop.jpg'),
+                    description: 'Dua Lipa, MO, MARINA',
+                  ),
+                  albumCover2: AlbumImage(
+                    title: '',
+                    albumCover: AssetImage('images/mixAlegre.jpg'),
+                    description: 'Lizzo, Ariana Grande, Z...',
+                  ),
+                  albumCover3: AlbumImage(
+                    title: '',
+                    albumCover: AssetImage('images/mixkpop.jpg'),
+                    description: 'NewJeans, LOONA, STAYC',
+                  ),
+                ),
+                const ContentCarrousel(
+                  title: 'Best of artists',
+                  albumCover1: AlbumImage(
+                    title: '',
+                    albumCover: AssetImage('images/thisIsMarina.jpg'),
+                    description: 'This is MARINA, The ess...',
+                  ),
+                  albumCover2: AlbumImage(
+                    title: '',
+                    albumCover: AssetImage('images/thisIsMitski.jpg'),
+                    description: 'This is Mitski. The ess...',
+                  ),
+                  albumCover3: AlbumImage(
+                    title: '',
+                    albumCover: AssetImage('images/thisIsDojaCat.jpg'),
+                    description: 'The Weeknd,  SZA, Araiana',
+                  ),
+                ),
+                const ContentCarrousel(
+                  title: 'Emo is\'nt just a phasse',
+                  albumCover1: AlbumImage(
+                    title: '',
+                    albumCover: AssetImage('images/thisIsParamore.jpg'),
+                    description: 'This is Paramore. The ess...',
+                  ),
+                  albumCover2: AlbumImage(
+                    title: '',
+                    albumCover: AssetImage('images/thisIsPATD.jpg'),
+                    description: 'This is Panic! At the Disco',
+                  ),
+                  albumCover3: AlbumImage(
+                    title: '',
+                    albumCover: AssetImage('images/thisIsAvrilLavigne.jpg'),
+                    description: 'This is Avril Lavigne',
                   ),
                 ),
                 const SizedBox(height: 200.0,),

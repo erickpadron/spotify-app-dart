@@ -72,6 +72,10 @@ flutter:
     - images/thisIsKimPetras.jpg
     - images/worms.jpg
     - images/planetHer.png
+    - images/mixpop.jpg
+    - images/mixAlegre.jpg
+    - images/mixkpop.jpg
+    - images/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
